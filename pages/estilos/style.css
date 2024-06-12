@@ -1,0 +1,171 @@
+body {
+    font-family: "platypi";
+    background-color: #14141c;
+    color: #e3d7cb;
+}
+
+header {
+    color: #8c7c7c;
+    background-color: #444444;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+header ul {
+    list-style-type: none; 
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #14141c;
+} 
+
+p {
+    color: #e3d7cb;
+}
+
+a {
+    text-decoration: none;
+}
+
+#portada {
+    width: 5vw;
+    height: 5vw;
+}
+
+.img-pag-principal {
+    width: 30vw;
+    height: 30vw;
+}
+
+.redes {
+    width: 100%;
+    height: 100%;
+}
+
+/*.tatuajes-de-milo {
+    width: 600px;
+    height: 600px;
+}
+comente esto porque con bootstrap esta parte es mas comoda, pero lo dejo por si en algun momento me hace falta para el proyecto final
+*/
+.diseño-alto {
+    width: 500px;
+    height: 600px;
+}
+
+.img-footer {
+    width: 3%;
+    height: 3%;
+}
+
+.footer-enlace {
+    list-style-type: none; 
+}
+
+
+.header-enlaces {
+    background-color: #e3d7cb;
+    display: flex;
+}
+
+.header-enlaces:hover {
+    color: #8c7c7c;
+}
+
+.tatuajes-de-milo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.lista-turnos {
+    display: grid;
+    grid-template-rows: repeat(3, 10px);
+    border: 1px solid #e3d7cb;
+}
+
+.lista-turnos:hover {
+    color: #8c7c7c;
+    background-color: #444444;
+}
+
+.contenedor-redes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 1px solid #e3d7cb;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.instagram {
+    grid-column:  3 / 4;
+    grid-row: 2 / 3;
+}
+.twitter {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.facebook {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#pag-principal {              /*hola profe, disculpe, no pude llegar a acomodar bien lo de grid, ahora lo que me pasa es que no se porque las columnas no miden lo mismo, pero gracias a que me respondio me ayudo a poder acomodarlo aunque sea*/
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "introduccion introduccion introduccion introduccion mapa"
+    "instagram instagram instagram estudio estudio"
+}
+
+.introduccion {
+    grid-area: introduccion;
+}
+.mapa {
+    grid-area: mapa;
+}
+.instagram {
+    grid-area: instagram;
+}
+.estudio {
+    grid-area: estudio;
+}
+
+
+
+
+
+
+.bg-body-tertiary {
+    --bs-bg-opacity: none;
+    background-color: #8c7c7c;
+}
+
+
+
