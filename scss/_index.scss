@@ -1,0 +1,45 @@
+/*inicio de index*/
+
+#pag-principal {             
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-items: stretch;
+    align-items: start;
+    grid-template-areas: 
+    "introduccion introduccion introduccion mapa mapa"
+    "instagram instagram estudio estudio estudio"
+}
+
+@media only screen and (max-width: 600px) {
+    #pag-principal {
+        margin: 10px;
+        grid-template-rows: repeat(4fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "introduccion"
+        "mapa"
+        "instagram"
+        "estudio"
+    }
+}
+
+.introduccion {
+    grid-area: introduccion;
+}
+.mapa {
+    grid-area: mapa;
+}
+.instagram {
+    grid-area: instagram;
+    max-height: 512px;
+}
+.estudio {
+    grid-area: estudio;
+    max-height: 512px;
+}
+
+/*fin de index*/

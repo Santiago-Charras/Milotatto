@@ -1,0 +1,112 @@
+/*inicio de header*/
+
+header {
+    color: map-get($paleta-colores, color-terciario);
+    background-color: map-get($paleta-colores, color-secundario);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    nav{
+        ul {
+            list-style-type: none; 
+                li{
+                 display: inline-block;
+                    a {
+                        color: #14141c;
+                    }
+
+                }
+
+            }
+    }
+}
+
+.header-enlaces {
+    background-color: map-get($paleta-colores, color-cuartario);
+    display: flex;
+}
+
+.header-enlaces:hover {
+    color: map-get($paleta-colores, color-terciario);
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: none;
+    background-color: map-get($paleta-colores, color-terciario);
+}
+
+#portada {
+    width: 5vw;
+    height: 5vw;
+}
+
+
+
+
+.actionBtn5 {
+    overflow:hidden;
+    position:relative;
+    display:block;
+    width:168px;
+    height:40px;
+    margin:auto;
+    border:1px solid #4c4c4d;
+    text-align:center;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    line-height:40px;
+    color:#4c4c4d;
+    font-size:14px;
+    font-family:oswald;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+.actionBtn5 span {
+    display:block;
+}
+.actionBtn5 .hover:after {
+    position:absolute;
+    top:0;
+    left:50%;
+    opacity:0;
+   display:block;
+    content:"";
+    width:0%;
+    height:40px;
+    background-color:#4c4c4d;
+    border:1px solid transparent;
+   transform:skewX(-40deg);
+   -webkit-transform:skewX(-40deg);
+   -moz-transform:skewX(-40deg);
+   transform-origin:center center;
+    -webkit-transform-origin:center center;
+    -ms-transform-origin:center center;
+    -moz-transform-origin:center center;
+    transition:all .35s, opacity .4s;
+    -webkit-transition:all .35s, opacity .4s;
+    -moz-transition:all .35s, opacity .4s;
+}
+.actionBtn5 .hover .txt {
+   z-index:10;
+   position:relative;
+    color:#4c4c4d;
+   transition:color .35s;
+   -webkit-transition:color .35s;
+   -moz-transition:color .35s;
+}
+.actionBtn5:hover .hover .txt {
+    color:#fff;
+}
+.actionBtn5 .hover:hover:after {
+    opacity:1;
+    left:3%;
+    width:95%;
+    transform:skewX(-40deg);
+    -webkit-transform:skewX(-40deg);
+    -moz-transform:skewX(-40deg);
+}
+
+/*fin de header*/

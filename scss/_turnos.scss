@@ -1,0 +1,16 @@
+/*inicio de turnos*/
+
+
+.lista-turnos {
+    display: grid;
+    grid-template-rows: repeat(3, 10px);
+    border: 1px solid map-get($paleta-colores, color-cuartario);
+}
+
+.lista-turnos:hover {
+    color: map-get($paleta-colores, color-terciario);
+    background-color: map-get($paleta-colores, color-cuartario);
+}
+
+
+/*fin de turnos*/

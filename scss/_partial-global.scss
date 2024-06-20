@@ -1,0 +1,21 @@
+/*inicio de partial global*/
+
+body {
+    font-family: $fuente;
+    background-color: map-get($paleta-colores, color-principal);
+    color: map-get($paleta-colores, color-cuartario);
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+p {
+    color: map-get($paleta-colores, color-cuartario);
+}
+
+a {
+    text-decoration: none;
+}
+/*fin de partial global*/
