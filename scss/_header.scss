@@ -42,6 +42,13 @@ header {
     height: 5vw;
 }
 
+@media only screen and (max-width: 600px){
+    #portada {
+        width: 18vw;
+        height: 18vw;
+    }
+}
+
 
 
 

@@ -1,7 +1,7 @@
 /*inicio de partial global*/
 
 body {
-    font-family: $fuente;
+    font-family: $fuente-texto;
     background-color: map-get($paleta-colores, color-principal);
     color: map-get($paleta-colores, color-cuartario);
 }
@@ -17,5 +17,6 @@ p {
 
 a {
     text-decoration: none;
+    font-family: $fuente-enlaces;
 }
 /*fin de partial global*/
